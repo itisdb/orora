@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="user.png">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="user.css">
+    <title>Dashboard</title>
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css">
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <!-- icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body id="body">
+    <div class="header">
+        <h1>ORORA</h1>
+    </div>
+
+    <!---------------------------------------------------Startup Registraion button--------------------------------------------------------->
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+        class="RegisterStartup">Register
+        Startup</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="logo1.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="Startupname"><b>Startup Name</b></label>
+                <input type="text" class="startupname" required>
+
+                <label for="Abstract"><b>Abstract</b></label>
+                <textarea class="abstract" required></textarea>
+
+                <label for="Description"><b>Description</b></label>
+                <textarea class="description" required></textarea>
+
+                <label for="Video"><b>Video</b></label>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Select video to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <button type="submit" value="Upload" class="uploadbutton">UPLOAD</button>
+                </form><br><br>
+
+                <label for="Fundingreq"><b>Funding Required</b></label>
+                <input type="text" class="fundingreq" required>
+
+                <label for="Futureplans"><b>Future Plans</b> (Expanding)</label>
+                <input type="text" class="fundingreq" required>
+                <br><br>
+                <div class="vl">
+                    <span class="vl-innertext">OR</span>
+                </div>
+                <br>
+                <br>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Upload Your Future Plan's Document :
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <button type="submit" value="Upload" class="uploadbutton">UPLOAD</button>
+                </form><br><br>
+
+
+                <button type="submit" class="register">Register</button>
+
+            </div>
+
+    </div>
+    </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            
+        }
+    </script>
+
+    <!---------------------------------------------------Startup Registraion button ENDED----------------------------------------------------->
+
+    <!----------------------------------------------------------profile menu button----------------------------------------------------------->
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <img src="logo1.png" alt="Avatar" class="avatar">
+
+            <li>Name - Abhishek Kumar Dey</li>
+            <li>eID - 696969</li>
+            <li>Email id - xoxo@gmail</li>
+            <li>Phone - 173314</li>
+            <li>Startup Name - samosa69</li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+            document.getElementById("body").classList.toggle("change-grad");
+        }
+
+    </script>
+
+
+    <!----------------------------------------------------------profile menu button ENDED----------------------------------------------------->
+
+
+    <section class="section">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla velit eaque
+            consequatur eos ex explicabo eum
+            ad, sed repellendus voluptatibus laborum consectetur assumenda earum laudantium omnis possimus dolorum amet
+            cum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea consectetur quis repudiandae, consequatur
+            magnam optio quia tenetur sapiente ipsa esse, quo dolorum explicabo quas laboriosam recusandae aspernatur
+            quisquam officia dignissimos?</p>
+
+    </section>
+
+    <!------------------------------------------------Chat Bot (FAQ)----------------------------------------------->
+
+    <img src="logo1.png" class="chatboxbutton" onclick="document.getElementById('id02').style.display='block'">
+
+    <div class="chatbox" id="id02">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+        <div class="chatlogs">
+            <div class="chat Bot">
+                <div class="user-photo"><img src="logo1.png"></div>
+                <p class="chat-message">What's up, Brother</p>
+            </div>
+
+            <div class="chat self">
+                <div class="user-photo"><img src="logo2.png"></div>
+                <p class="chat-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quam sit
+                    fugit aliquam dicta nobis perferendis ea. Nisi nobis placeat fuga, perferendis eveniet quia
+                    debitis nostrum porro minus non aliquam.</p>
+            </div>
+
+        </div>
+
+        <div class="chat-form">
+            <textarea></textarea>
+            <button>Send</button>
+        </div>
+    </div>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

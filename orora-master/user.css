@@ -1,0 +1,510 @@
+html {max-width: auto;
+}
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Darker Grotesque" !important;
+}
+body{
+    /*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.989)),url("orora.jpg");*/
+    background: url("orora.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow:hidden ;
+    background-repeat: no-repeat;
+
+  
+}
+
+
+.title{ color: #d3ae87;    
+    font-size: 2vw !important;  /*changes made from using pixels to vw in order for a responsive text */
+    text-align: center !important;    /*text align added to make to text at the center*/
+    
+
+}
+.titlebox{
+    width: 400px;
+   
+}
+.abstract{
+    color: #000000;
+    font-size: 20px !important;  /*changes made from using pixels to vw in order for a responsive text */
+    /*text-align: justify !important;    text align added to make to text at the center*/
+    height: 100px;
+    width: 100%;
+}
+.description{
+  height: 100px;
+  width: 100%;
+  text-align: initial;
+  color: #000000;
+    font-size: 20px !important;
+}
+
+.uploadbutton{
+    
+        background-color: #c7f165;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 150px;
+      
+
+}
+.uploadbutton:hover {
+    opacity: 0.8;
+    color: white;
+    background-color: #799b2a;
+
+}
+
+
+
+/*---------------------------------------------------register_startup_ button--------------------------------------------------------------*/
+
+/* Full-width input fields */
+input[type=text], input[type=file]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .RegisterStartup {
+    background-color: #d3ae87;
+    padding: 1vw 2vw;
+    position: absolute;
+    top: 4%;
+    right:2%;
+    cursor: pointer;
+    width: auto;
+    border: #f1f1f1;
+    border-radius: 5px;
+    font-family: Century Gothic !important;
+    
+
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    color: white;
+    background-color: #d3ae87;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 10%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+ 
+  .description{
+    height: 100px;
+  }
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    width: 900px;
+  }
+  /* text inside the vertical line */
+.vl-innertext {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  .register{
+
+
+    background-color: #d3ae87;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+  }
+
+
+
+
+  /*------------------------------------------------------hamburger_button----------------------------------------------------------*/
+ #menu{
+	width: 35px;
+	height: 30px;
+	margin: 40px 0 20px 20px;
+  cursor: pointer;
+  z-index: 4;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+    background-color: #d3ae87;
+	display: block;
+	border-radius: 10px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+
+
+.nav li{
+	list-style: none;
+    padding: 16px 0;
+    color: #ac6c0d;
+    font-family: Century Gothic !important;
+   
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+  display: none;
+  
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+  position: absolute;
+  z-index: 3;
+}
+.menu-bg{
+	z-index: 2;
+	width: 0;
+	height: 0;
+	margin: 150px 0 60px 60px;
+	background: radial-gradient(circle,#eece9e,#a07946);
+	border-radius: 70%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 3;	
+}
+.change-bg{
+	width: 550px;
+	height: 540px;
+  transform: translate(-60%,-30%);
+ 
+}
+.change .bar{
+  background-color: white;
+
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+  display: block;
+  
+}
+.change-grad{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(orora.jpg);
+  
+}
+
+
+/*------------------------------------------------------heading_(ORORA)--------------------------------------------------*/
+.header {
+    position: absolute;
+     top: 50px;
+     left: 50%; /*----changed 45% to 50% for aligning it to the center-------*/
+     transform: translate(-50%, -50%);
+}
+
+.header h1 {
+     color: #d3ae87;    /*---------cahnged form #d3ae87 to #D4AF37*/
+     font-size: 4vw !important;  /*changes made from using pixels to vw in order for a responsive text */
+     text-align: center !important;    /*text align added to make to text at the center*/
+     font-family: Century Gothic !important;
+     
+}
+
+
+
+/*---------------------------------------------section-----------------------------------------------------------------*/
+section{
+  color: #FFFFFF !important;
+  background-color: rgba(0,0,0,0.3);
+  font-family: 'Consolas',Monospace;
+  width: 80%;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section p{
+  font-size: 20px;
+  padding: 0 5px;
+  }
+.section::-webkit-scrollbar{
+  width: 10px;
+}
+.section::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: rgba(0,0,0,0.2);
+}
+
+/*-----------------------------------------------chat_box------------------------------------------------------------------*/
+.chatbox{
+  position: absolute;
+  bottom:0;
+  right:0;
+  display: none;
+  width: 400px !important;
+  min-width: 90px !important;
+  height: 250px !important;
+ background: rgb(241, 240, 240);
+ padding: 5px;
+ box-shadow: 0 3px #ccc; 
+ z-index: 10;
+}
+.chatbox {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+.chatlogs{
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  background: #eee;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.chatlogs::-webkit-scrollbar{
+  width: 10px;
+}
+.chatlogs::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: rgba(0,0,0,0.5);
+}
+.chatlogs::-webkit-scrollbar-thumb:hover{
+  background: rgba(0,0,0,0.8);
+}
+
+.chat{
+  display: flex;
+  flex-flow: row wrap;
+  align-items:  flex-start;
+  margin-bottom: 10px;
+
+}
+.chat .user-photo{
+  width: 40px ;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+.chat .user-photo img{
+  width: 100%;
+}
+.chat .chat-message{
+  width: 70%;
+  padding: 10px;
+  margin: 5px 10px 0;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #fff;
+}
+.Bot .chat-message{
+  background: #1adda4;
+}
+.self .chat-message{
+  background: #1ddced;
+  order: -1;
+}
+.chat-form{
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+
+}
+.chat-form textarea{
+  background: #fbfbfb;
+  width: 75%;
+  height: 50px;
+  border: 2px solid #d3ae87;
+  border-radius: 3px;
+  resize: none;
+  padding: 5px;
+  font-size: 15px;
+  color: #333;
+}
+.chat-form textarea::-webkit-scrollbar{
+  width: 10px;
+}
+.chat-form textarea::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: rgba(0,0,0,0.5);
+}
+
+.chat-form textarea:focus{
+  background: #fff;
+}
+.chat-form button{
+background: #1ddced;
+padding: 5px 15px;
+font-size: 10px;
+color: #fff;
+border: none;
+margin: 10px 10px;
+border-radius: 3px;
+box-shadow: 0 3px 0 #0eb2c1;
+cursor: pointer;
+
+
+}
+.chat-form button:hover{
+  background: #13c8d9;
+}  
+
+.chatboxbutton{
+  
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        font-size:18px ;
+        position: absolute;
+        top: 80%;
+        left: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
